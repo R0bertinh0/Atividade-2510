@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="loginForm">
+          <h2>Login</h2>
+
+          <p><label for="email">Email</label> 
+            <input type="email" name="email" id="email" placeholder="email" required /></p>
+
+          
+            <p><label for="senha">Senha</label>
+            <input type="password" name="password" id="typepass" placeholder="senha" minlength="6" required /> 
+            
+            <input type="checkbox" onclick="Toggle()">
+            
+            <b>Mostrar senha</b>
+          
+            <script>            
+                function Toggle() {
+                    var temp = document.getElementById("typepass");
+                    if (temp.type === "password") {
+                        temp.type = "text";
+                    }
+                    else {
+                        temp.type = "password";
+                    }
+                }
+        </script>
+                  
+
+          <p><input type="submit" value="Login" class="button" /></p>
+
+        </form>
+      </div>
+
+        
+
+</body>
+</html>
